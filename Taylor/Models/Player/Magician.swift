@@ -20,3 +20,21 @@ public class Magician: Human {
         self.weapon = weapon
     }
 }
+
+extension Magician: HumanProtocol {
+    func walk() {
+        
+    }
+    
+    func eat() {
+        
+    }
+    
+    func sleep() {
+        
+    }
+    
+    func fight() {
+        
+    }
+}

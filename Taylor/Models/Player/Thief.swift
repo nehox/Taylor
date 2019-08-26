@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class  Thief: Human {
+public class Thief: Human {
     
     var weapon: Weapon?
     
@@ -18,5 +18,23 @@ public class  Thief: Human {
             .intelligence: 10,
             .agility: 15])
         self.weapon = weapon
+    }
+}
+
+extension Thief: HumanProtocol {
+    func walk() {
+        
+    }
+    
+    func eat() {
+        
+    }
+    
+    func sleep() {
+        
+    }
+    
+    func fight() {
+        
     }
 }

@@ -22,6 +22,13 @@ enum Gender {
     case other
 }
 
+protocol HumanProtocol {
+    func walk()
+    func eat()
+    func sleep()
+    func fight()
+}
+
 public class Human {
     
     let name: String
@@ -42,13 +49,5 @@ public class Human {
         self.gender    = gender
         self.lifePoint = lifePoint
         self.skillsPoints = skillsPoints
-        
-        print("Oh formidable un nouvel humain nommé \(name) \(surname), il poosède \(lifePoint)hp ")
     }
-    
-    public func walk(){}
-    public func eat(){}
-    public func sleep(){}
-    public func fight(){}
-    
 }

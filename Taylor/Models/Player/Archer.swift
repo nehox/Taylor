@@ -21,3 +21,22 @@ public class Archer: Human {
         self.weapon = weapon
     }
 }
+
+extension Archer: HumanProtocol {
+    
+    func walk() {
+        
+    }
+    
+    func eat() {
+        
+    }
+    
+    func sleep() {
+        
+    }
+    
+    func fight() {
+        
+    }
+}
