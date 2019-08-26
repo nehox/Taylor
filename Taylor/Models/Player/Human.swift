@@ -29,9 +29,7 @@ public class Human {
     let gender: Gender
     let skillsPoints: [Skills: Int]
     
-    
     var lifePoint: Int
-    
     
     /// Initialize an Human
     /// - Parameter name: human's name
@@ -51,5 +49,6 @@ public class Human {
     public func walk(){}
     public func eat(){}
     public func sleep(){}
+    public func fight(){}
     
 }
