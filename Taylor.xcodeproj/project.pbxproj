@@ -51,7 +51,7 @@
 		F92F52B32314081C001E39B8 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92F52B62314081C001E39B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92F52B82314081C001E39B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F92F52BA2314081C001E39B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F92F52BA2314081C001E39B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Taylor/Controller/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		F92F52BD2314081C001E39B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92F52BF2314081D001E39B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92F52C22314081D001E39B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		F92F52D42314081D001E39B8 /* TaylorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaylorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92F52D82314081D001E39B8 /* TaylorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaylorUITests.swift; sourceTree = "<group>"; };
 		F92F52DA2314081D001E39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F92F52EA231411B5001E39B8 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		F92F52EA231411B5001E39B8 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Human.swift; path = Taylor/Models/Player/Human.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +172,7 @@
 		F92F52E623140F25001E39B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F92F52ED23142555001E39B8 /* Monster */,
 				F92F52EC23142505001E39B8 /* Player */,
 			);
 			path = Models;
@@ -201,6 +202,13 @@
 				F92F52EA231411B5001E39B8 /* Human.swift */,
 			);
 			path = Player;
+			sourceTree = "<group>";
+		};
+		F92F52ED23142555001E39B8 /* Monster */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Monster;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

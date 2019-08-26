@@ -12,9 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let steveJobs = Human(name: "Steve", surname: "Jobs", lifePoint: 120, skillsPoints: [
+            Skills.speed : 20,
+            Skills.intelligence: 25,
+            Skills.agility : 5])
     }
-
-
 }
 

@@ -32,7 +32,9 @@ public class Human {
         self.name      = name
         self.surname   = surname
         self.lifePoint = lifePoint
-        self.skillsPoints    = skillsPoints
+        self.skillsPoints = skillsPoints
+        
+        print("Oh formidable un nouvel humain nommé \(name) \(surname), il poosède \(lifePoint)hp ")
     }
     
     public func walk(){}
