@@ -99,12 +99,11 @@
 		F92F52B52314081C001E39B8 /* Taylor */ = {
 			isa = PBXGroup;
 			children = (
+				F92F52E623140F25001E39B8 /* Models */,
+				F92F52E723140F40001E39B8 /* Vue */,
+				F92F52E823140F5C001E39B8 /* Controller */,
 				F92F52B62314081C001E39B8 /* AppDelegate.swift */,
-				F92F52B82314081C001E39B8 /* SceneDelegate.swift */,
-				F92F52BA2314081C001E39B8 /* ViewController.swift */,
-				F92F52BC2314081C001E39B8 /* Main.storyboard */,
 				F92F52BF2314081D001E39B8 /* Assets.xcassets */,
-				F92F52C12314081D001E39B8 /* LaunchScreen.storyboard */,
 				F92F52C42314081D001E39B8 /* Info.plist */,
 			);
 			path = Taylor;
@@ -126,6 +125,31 @@
 				F92F52DA2314081D001E39B8 /* Info.plist */,
 			);
 			path = TaylorUITests;
+			sourceTree = "<group>";
+		};
+		F92F52E623140F25001E39B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F92F52E723140F40001E39B8 /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+				F92F52C12314081D001E39B8 /* LaunchScreen.storyboard */,
+				F92F52BC2314081C001E39B8 /* Main.storyboard */,
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		F92F52E823140F5C001E39B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F92F52BA2314081C001E39B8 /* ViewController.swift */,
+				F92F52B82314081C001E39B8 /* SceneDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
