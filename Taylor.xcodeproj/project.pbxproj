@@ -20,7 +20,7 @@
 		F92F52D92314081D001E39B8 /* TaylorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52D82314081D001E39B8 /* TaylorUITests.swift */; };
 		F92F52EB231411B5001E39B8 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52EA231411B5001E39B8 /* Human.swift */; };
 		F9ECABDC2314601100A2EFB2 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDB2314601100A2EFB2 /* Archer.swift */; };
-		F9ECABDF2314627200A2EFB2 /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDE2314627200A2EFB2 /* Weapons.swift */; };
+		F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDE2314627200A2EFB2 /* Weapon.swift */; };
 		F9ECABE1231468D700A2EFB2 /* Thief.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE0231468D700A2EFB2 /* Thief.swift */; };
 		F9ECABE3231468E700A2EFB2 /* Magician.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE2231468E700A2EFB2 /* Magician.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +68,7 @@
 		F92F52DA2314081D001E39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92F52EA231411B5001E39B8 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Human.swift; path = Taylor/Models/Player/Human.swift; sourceTree = SOURCE_ROOT; };
 		F9ECABDB2314601100A2EFB2 /* Archer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archer.swift; sourceTree = "<group>"; };
-		F9ECABDE2314627200A2EFB2 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
+		F9ECABDE2314627200A2EFB2 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		F9ECABE0231468D700A2EFB2 /* Thief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thief.swift; sourceTree = "<group>"; };
 		F9ECABE2231468E700A2EFB2 /* Magician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magician.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,7 +226,7 @@
 		F9ECABDD2314614100A2EFB2 /* items */ = {
 			isa = PBXGroup;
 			children = (
-				F9ECABDE2314627200A2EFB2 /* Weapons.swift */,
+				F9ECABDE2314627200A2EFB2 /* Weapon.swift */,
 			);
 			path = items;
 			sourceTree = "<group>";
@@ -522,7 +522,7 @@
 				F92F52B72314081C001E39B8 /* AppDelegate.swift in Sources */,
 				F9ECABE3231468E700A2EFB2 /* Magician.swift in Sources */,
 				F92F52B92314081C001E39B8 /* SceneDelegate.swift in Sources */,
-				F9ECABDF2314627200A2EFB2 /* Weapons.swift in Sources */,
+				F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */,
 				F9ECABE1231468D700A2EFB2 /* Thief.swift in Sources */,
 				F92F52EB231411B5001E39B8 /* Human.swift in Sources */,
 				F9ECABDC2314601100A2EFB2 /* Archer.swift in Sources */,

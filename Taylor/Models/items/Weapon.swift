@@ -14,7 +14,7 @@ enum Type {
     case magic
 }
 
-public class Weapons {
+public class Weapon {
     
     let type: Type
     let damage: Int
