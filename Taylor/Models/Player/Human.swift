@@ -16,21 +16,32 @@ enum Skills {
     case intelligence
 }
 
+enum Gender {
+    case male
+    case female
+    case other
+}
+
 public class Human {
     
-    var name: String
-    var surname: String
+    let name: String
+    let surname: String
+    let gender: Gender
+    let skillsPoints: [Skills: Int]
+    
+    
     var lifePoint: Int
-    var skillsPoints: [Skills: Int]
+    
     
     /// Initialize an Human
     /// - Parameter name: human's name
     /// - Parameter surname: human's surname
     /// - Parameter lifePoint: human's lifePoint - default 20pts
     /// - Parameter skills: list of human skillsPoint
-    init(name:String, surname: String, lifePoint: Int = 20, skillsPoints: [Skills: Int]) {
+    init(name:String, surname: String,gender: Gender , lifePoint: Int = 20, skillsPoints: [Skills: Int]) {
         self.name      = name
         self.surname   = surname
+        self.gender    = gender
         self.lifePoint = lifePoint
         self.skillsPoints = skillsPoints
         
