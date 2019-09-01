@@ -23,6 +23,7 @@
 		F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDE2314627200A2EFB2 /* Weapon.swift */; };
 		F9ECABE1231468D700A2EFB2 /* Thief.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE0231468D700A2EFB2 /* Thief.swift */; };
 		F9ECABE3231468E700A2EFB2 /* Magician.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE2231468E700A2EFB2 /* Magician.swift */; };
+		F9ECABE52319AAAB00A2EFB2 /* NewCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE42319AAAB00A2EFB2 /* NewCharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F9ECABDE2314627200A2EFB2 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		F9ECABE0231468D700A2EFB2 /* Thief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thief.swift; sourceTree = "<group>"; };
 		F9ECABE2231468E700A2EFB2 /* Magician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magician.swift; sourceTree = "<group>"; };
+		F9ECABE42319AAAB00A2EFB2 /* NewCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		F92F52E823140F5C001E39B8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F9ECABE42319AAAB00A2EFB2 /* NewCharacterViewController.swift */,
 				F92F52BA2314081C001E39B8 /* ViewController.swift */,
 				F92F52B82314081C001E39B8 /* SceneDelegate.swift */,
 			);
@@ -521,6 +524,7 @@
 				F92F52BB2314081C001E39B8 /* ViewController.swift in Sources */,
 				F92F52B72314081C001E39B8 /* AppDelegate.swift in Sources */,
 				F9ECABE3231468E700A2EFB2 /* Magician.swift in Sources */,
+				F9ECABE52319AAAB00A2EFB2 /* NewCharacterViewController.swift in Sources */,
 				F92F52B92314081C001E39B8 /* SceneDelegate.swift in Sources */,
 				F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */,
 				F9ECABE1231468D700A2EFB2 /* Thief.swift in Sources */,
