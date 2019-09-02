@@ -25,7 +25,9 @@ public class Archer: Human {
 extension Archer: HumanProtocol {
     
     func eat() {
-        
+        if (self.lifePoint < 95) {
+            self.lifePoint += 5
+        }
     }
     
     func sleep() {

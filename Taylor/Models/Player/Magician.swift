@@ -24,7 +24,9 @@ public class Magician: Human {
 extension Magician: HumanProtocol {
 
     func eat() {
-        
+        if (self.lifePoint < 95) {
+            self.lifePoint += 5
+        }
     }
     
     func sleep() {

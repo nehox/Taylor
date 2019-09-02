@@ -24,7 +24,9 @@ public class Thief: Human {
 extension Thief: HumanProtocol {
 
     func eat() {
-        
+        if (self.lifePoint < 95) {
+            self.lifePoint += 5
+        }
     }
     
     func sleep() {
