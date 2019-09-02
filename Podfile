@@ -7,6 +7,8 @@ target 'Taylor' do
 
   # Pods for Taylor
 
+  pod 'SwiftGifOrigin', '~> 1.7.0'
+
   target 'TaylorTests' do
     inherit! :search_paths
     # Pods for testing
