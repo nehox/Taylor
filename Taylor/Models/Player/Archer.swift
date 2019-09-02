@@ -24,10 +24,6 @@ public class Archer: Human {
 
 extension Archer: HumanProtocol {
     
-    func walk() {
-        
-    }
-    
     func eat() {
         
     }

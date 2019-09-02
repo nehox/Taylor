@@ -22,10 +22,7 @@ public class Thief: Human {
 }
 
 extension Thief: HumanProtocol {
-    func walk() {
-        
-    }
-    
+
     func eat() {
         
     }

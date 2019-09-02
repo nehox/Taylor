@@ -23,7 +23,6 @@ enum Gender {
 }
 
 protocol HumanProtocol {
-    func walk()
     func eat()
     func sleep()
     func fight()

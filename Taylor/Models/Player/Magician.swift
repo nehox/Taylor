@@ -22,10 +22,7 @@ public class Magician: Human {
 }
 
 extension Magician: HumanProtocol {
-    func walk() {
-        
-    }
-    
+
     func eat() {
         
     }
