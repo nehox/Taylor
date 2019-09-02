@@ -100,6 +100,9 @@
                                 <state key="normal" title="Sauvegarde">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="czD-kZ-3Ma" eventType="touchUpInside" id="iwM-uw-M7V"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fgp-uD-aco">
                                 <rect key="frame" x="101" y="423.5" width="281" height="34"/>

@@ -21,4 +21,35 @@ class NewCharacterViewcontroller: UIViewController {
         super.viewDidLoad()
         
     }
+    @IBAction func saveButton(_ sender: Any) {
+        
+        var perso: Human
+        
+        switch classSegmentedController.selectedSegmentIndex {
+        case 0:
+            perso = Archer(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+        case 1:
+            perso = Magician(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+        case 2:
+            perso = Thief(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+        default:
+            perso = Human(name: "John", surname: "Doe", gender: .other, skillsPoints: [:])
+        }
+        
+        print("nouveau perso : \nnom : \(perso.name)\nprenom : \(perso.surname)\nclass : \(String(describing: perso))\ngender : \(perso.gender)")
+        
+    }
+    
+    
+    /// get current selected gender
+    private func getGender() -> Gender {
+        switch genderSegmentedController.selectedSegmentIndex {
+        case 0:
+            return .male
+        case 1:
+            return .female
+        default:
+            return .other
+        }
+    }
 }
