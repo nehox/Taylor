@@ -10,7 +10,7 @@ import Foundation
 
 class Zombi {
     
-    let lifePoint: Int
+    var lifePoint: Int
     let damage: Int
     let hitChance: Int
     
