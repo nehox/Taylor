@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftGifOrigin
 
 class NewCharacterViewcontroller: UIViewController {
     
@@ -19,6 +20,10 @@ class NewCharacterViewcontroller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        genderSegmentedController.selectedSegmentIndex = 0
+        classSegmentedController.selectedSegmentIndex = 2
+        self.imageView.loadGif(asset: "Thief_Male")
         
     }
     @IBAction func saveButton(_ sender: Any) {
@@ -51,5 +56,57 @@ class NewCharacterViewcontroller: UIViewController {
         default:
             return .other
         }
+    }
+    
+    
+    /// get current class
+    private func getCharacterClass() -> PlayerClass {
+        switch classSegmentedController.selectedSegmentIndex {
+        case 0:
+            return .archer
+        case 1:
+            return .magician
+        case 2:
+            return .thief
+        default:
+            return .archer
+        }
+    }
+    
+    private func changeImageViewCharacter(gender : Gender, playerClass: PlayerClass) {
+        
+        var genderStr = ""
+        
+        switch gender {
+            case .male:
+                genderStr = "Male"
+                break
+            case .female:
+                genderStr = "Female"
+                break
+            case .other:
+                genderStr = "Other"
+                break
+        }
+        
+        switch playerClass {
+        case .archer:
+            self.imageView.loadGif(asset: "Archer_\(genderStr)")
+            break
+        case .magician:
+            self.imageView.loadGif(asset: "Magician_\(genderStr)")
+            break
+        case .thief:
+            self.imageView.loadGif(asset: "Thief_\(genderStr)")
+            break
+        }
+    }
+    
+    
+    @IBAction func genderSelectControllerChanged(_ sender: Any) {
+        self.changeImageViewCharacter(gender: getGender(), playerClass: getCharacterClass())
+    }
+    @IBAction func classSegmentedControllerChanged(_ sender: Any) {
+        self.changeImageViewCharacter(gender: getGender(), playerClass: getCharacterClass())
     }
 }

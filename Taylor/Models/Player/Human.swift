@@ -22,6 +22,12 @@ enum Gender {
     case other
 }
 
+enum PlayerClass {
+    case archer 
+    case thief
+    case magician
+}
+
 protocol HumanProtocol {
     func eat()
     func sleep()
