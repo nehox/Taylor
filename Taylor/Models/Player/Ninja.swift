@@ -13,10 +13,7 @@ public class Ninja: Human {
     var weapon: Weapon?
     
     init(name: String, surname: String, gender: Gender, weapon: Weapon? ) {
-        super.init(name: name, surname: surname, gender: gender, lifePoint: 100, skillsPoints: [
-            .speed : 25,
-            .intelligence: 10,
-            .agility: 15])
+        super.init(name: name, surname: surname, gender: gender, lifePoint: 100)
         self.weapon = weapon
     }
 }

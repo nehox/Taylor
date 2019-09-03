@@ -17,11 +17,6 @@ class CharacterListViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        let listCharactersEncoded = UserDefaults.standard.data(forKey: "listPlayer")!
-        
-        listCharacters = NSKeyedUnarchiver.unarchiveObject(with: listCharactersEncoded ) as! [Human]
-        
-        print(listCharacters.count)
     }
     
     

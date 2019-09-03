@@ -39,7 +39,7 @@ public class Human {
     let name: String
     let surname: String
     let gender: Gender
-    let skillsPoints: [Skills: Int]
+    //let skillsPoints: [Skills: Int]
     
     var lifePoint: Int
     
@@ -48,11 +48,10 @@ public class Human {
     /// - Parameter surname: human's surname
     /// - Parameter lifePoint: human's lifePoint - default 20pts
     /// - Parameter skills: list of human skillsPoint
-    init(name:String, surname: String,gender: Gender , lifePoint: Int = 20, skillsPoints: [Skills: Int]) {
+    init(name:String, surname: String,gender: Gender , lifePoint: Int = 20) {
         self.name      = name
         self.surname   = surname
         self.gender    = gender
         self.lifePoint = lifePoint
-        self.skillsPoints = skillsPoints
     }
 }

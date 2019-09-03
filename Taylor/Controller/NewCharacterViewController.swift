@@ -95,21 +95,16 @@ class NewCharacterViewcontroller: UIViewController {
     
     @IBAction func saveButton(_ sender: Any) {
         
-        var perso: Human
-        
         switch classSegmentedController.selectedSegmentIndex {
         case 0:
-            perso = Zombi(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+            _ = Zombi(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
         case 1:
-            perso = Adventurer(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+            _ = Adventurer(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
         case 2:
-            perso = Ninja(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+            _ = Ninja(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
         default:
-            perso = Human(name: "John", surname: "Doe", gender: .other, skillsPoints: [:])
+            _ = Human(name: "John", surname: "Doe", gender: .other)
         }
-        
-        print("nouveau perso : \nnom : \(perso.name)\nprenom : \(perso.surname)\nclass : \(String(describing: perso))\ngender : \(perso.gender)")
-        
     }
     
     @IBAction func genderSelectControllerChanged(_ sender: Any) {

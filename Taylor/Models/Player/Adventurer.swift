@@ -13,10 +13,7 @@ public class Adventurer: Human {
    var weapon: Weapon?
     
     init(name: String, surname: String, gender: Gender, weapon: Weapon? ) {
-        super.init(name: name, surname: surname, gender: gender, lifePoint: 100, skillsPoints: [
-            .speed : 15,
-            .intelligence: 25,
-            .agility: 10])
+        super.init(name: name, surname: surname, gender: gender, lifePoint: 100)
         self.weapon = weapon
     }
 }

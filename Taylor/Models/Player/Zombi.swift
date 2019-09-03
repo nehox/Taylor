@@ -14,10 +14,7 @@ public class Zombi: Human {
     var weapon: Weapon?
     
     init(name: String, surname: String, gender: Gender, weapon: Weapon? ) {
-        super.init(name: name, surname: surname, gender: gender, lifePoint: 100, skillsPoints: [
-            .speed : 15,
-            .intelligence: 10,
-            .agility: 25])
+        super.init(name: name, surname: surname, gender: gender, lifePoint: 100)
         self.weapon = weapon
     }
 }
