@@ -11,6 +11,7 @@
 		7EF3E9B73BB0A2FEFE623BB8 /* Pods_TaylorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A3E09050C68ACB55027401 /* Pods_TaylorUITests.framework */; };
 		BE34B4C2231D493F005AEB5B /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34B4C1231D493F005AEB5B /* Monster.swift */; };
 		BE34B4C4231D5171005AEB5B /* FightArenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */; };
+		BE49B342231E97CE009E2E01 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49B341231E97CE009E2E01 /* CharacterListViewController.swift */; };
 		E2A69A008A4196C4C424DFAE /* Pods_TaylorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F622F93F9DFF35A6F4F82F /* Pods_TaylorTests.framework */; };
 		F92F52B72314081C001E39B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52B62314081C001E39B8 /* AppDelegate.swift */; };
 		F92F52B92314081C001E39B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52B82314081C001E39B8 /* SceneDelegate.swift */; };
@@ -57,6 +58,7 @@
 		A4CFE5000A53D3F647021D35 /* Pods-Taylor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taylor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taylor/Pods-Taylor.debug.xcconfig"; sourceTree = "<group>"; };
 		BE34B4C1231D493F005AEB5B /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = SOURCE_ROOT; };
 		BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightArenaViewController.swift; sourceTree = "<group>"; };
+		BE49B341231E97CE009E2E01 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		F92F52B32314081C001E39B8 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92F52B62314081C001E39B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F92F52B82314081C001E39B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				F92F52BA2314081C001E39B8 /* ViewController.swift */,
 				F92F52B82314081C001E39B8 /* SceneDelegate.swift */,
 				BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */,
+				BE49B341231E97CE009E2E01 /* CharacterListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				F92F52B72314081C001E39B8 /* AppDelegate.swift in Sources */,
 				BE34B4C4231D5171005AEB5B /* FightArenaViewController.swift in Sources */,
 				F9ECABE3231468E700A2EFB2 /* Adventurer.swift in Sources */,
+				BE49B342231E97CE009E2E01 /* CharacterListViewController.swift in Sources */,
 				F9ECABE52319AAAB00A2EFB2 /* NewCharacterViewController.swift in Sources */,
 				F92F52B92314081C001E39B8 /* SceneDelegate.swift in Sources */,
 				F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */,
