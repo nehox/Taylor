@@ -73,6 +73,10 @@ class NewCharacterViewcontroller: UIViewController {
         }
     }
     
+    
+    /// change class preview
+    /// - Parameter gender: male / female / other
+    /// - Parameter playerClass: thief / magician / archer
     private func changeImageViewCharacter(gender : Gender, playerClass: PlayerClass) {
         
         var genderStr = ""
@@ -90,15 +94,15 @@ class NewCharacterViewcontroller: UIViewController {
         }
         
         switch playerClass {
-        case .archer:
-            self.imageView.loadGif(asset: "Archer_\(genderStr)")
-            break
-        case .magician:
-            self.imageView.loadGif(asset: "Magician_\(genderStr)")
-            break
-        case .thief:
-            self.imageView.loadGif(asset: "Thief_\(genderStr)")
-            break
+            case .archer:
+                self.imageView.loadGif(asset: "Archer_\(genderStr)")
+                break
+            case .magician:
+                self.imageView.loadGif(asset: "Magician_\(genderStr)")
+                break
+            case .thief:
+                self.imageView.loadGif(asset: "Thief_\(genderStr)")
+                break
         }
     }
     
