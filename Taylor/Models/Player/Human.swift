@@ -16,7 +16,7 @@ enum Skills {
     case intelligence
 }
 
-enum Gender {
+enum Gender: String {
     case male
     case female
     case other

@@ -11,7 +11,4 @@ import CoreData
 
 public class CoreDataUtils {
     
-    static func getDatas(){
-        
-    }
 }

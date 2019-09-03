@@ -33,85 +33,62 @@ class NewCharacterViewcontroller: UIViewController {
     // MARK: -- private functions --
     
     /// get current selected gender
-    private func getGender() -> Gender {
+    private func getGender() -> String {
         switch genderSegmentedController.selectedSegmentIndex {
         case 0:
-            return .male
+            return "Male"
         case 1:
-            return .female
+            return "Female"
         default:
-            return .other
+            return "Other"
         }
     }
     
     
     /// get current class
-    private func getCharacterClass() -> PlayerClass {
+    private func getCharacterClass() -> String {
         switch classSegmentedController.selectedSegmentIndex {
         case 0:
-            return .zombi
+            return "Zombi"
         case 1:
-            return .adventurer
+            return "Adventurer"
         case 2:
-            return .ninja
+            return "Ninja"
         default:
-            return .zombi
+            return "Other"
         }
     }
     
     /// change class preview
-    /// - Parameter gender: male / female / other
-    /// - Parameter playerClass: thief / magician / archer
-    private func changeImageViewCharacter(gender : Gender, playerClass: PlayerClass) {
-        
-        var genderStr = ""
-        
-        switch gender {
-            case .male:
-                genderStr = "Male"
-                break
-            case .female:
-                genderStr = "Female"
-                break
-            case .other:
-                genderStr = "Other"
-                break
-        }
-        
-        switch playerClass {
-            case .zombi:
-                self.imageView.loadGif(asset: "Zombi_\(genderStr)")
-                break
-            case .adventurer:
-                self.imageView.loadGif(asset: "Adventurer_\(genderStr)")
-                break
-            case .ninja:
-                self.imageView.loadGif(asset: "Ninja_\(genderStr)")
-                break
-        }
+    private func changeImageViewCharacter() {
+        self.imageView.loadGif(asset: "\(getCharacterClass())_\(getGender())")
     }
     
     // MARK: -- Outlets actions --
     
     @IBAction func saveButton(_ sender: Any) {
         
-        switch classSegmentedController.selectedSegmentIndex {
-        case 0:
-            _ = Zombi(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
-        case 1:
-            _ = Adventurer(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
-        case 2:
-            _ = Ninja(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
-        default:
-            _ = Human(name: "John", surname: "Doe", gender: .other)
+        let player = Player(context: AppDelegate.viewContext)
+        
+        player.name = nameTexField.text ?? ""
+        player.surname = surnameTextField.text ?? ""
+        player.gender = getGender()
+        player.playerClass = getCharacterClass()
+        player.lifePoint = 100
+        
+        do {
+            try AppDelegate.viewContext.save()
+            print("save Ok")
+        }catch {
+           print("oups fail")
         }
     }
     
     @IBAction func genderSelectControllerChanged(_ sender: Any) {
-        self.changeImageViewCharacter(gender: getGender(), playerClass: getCharacterClass())
+        self.changeImageViewCharacter()
     }
     @IBAction func classSegmentedControllerChanged(_ sender: Any) {
-        self.changeImageViewCharacter(gender: getGender(), playerClass: getCharacterClass())
+        self.changeImageViewCharacter()
     }
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true)
