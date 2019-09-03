@@ -16,9 +16,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y3-wM-8yQ">
-                                <rect key="frame" x="184" y="363" width="46" height="30"/>
+                                <rect key="frame" x="124.5" y="363" width="165" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="Nouveau Perso"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Création de personnage"/>
                                 <connections>
                                     <segue destination="czD-kZ-3Ma" kind="show" id="mdy-Ux-XSO"/>
                                 </connections>
