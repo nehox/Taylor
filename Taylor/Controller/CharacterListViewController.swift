@@ -11,7 +11,37 @@ import UIKit
 
 class CharacterListViewController: UIViewController {
     
+    var listCharacters = [Human]()
+    
+    @IBOutlet weak var listCharacterTableView: UITableView!
+    
+    override func viewDidLoad() {
+        
+        let listCharactersEncoded = UserDefaults.standard.data(forKey: "listPlayer")!
+        
+        listCharacters = NSKeyedUnarchiver.unarchiveObject(with: listCharactersEncoded ) as! [Human]
+        
+        print(listCharacters.count)
+    }
+    
+    
     @IBAction func closeViewButton(_ sender: Any) {
         self.dismiss(animated: true)
     }
+}
+
+extension CharacterListViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 8
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell()
+        
+        cell.textLabel?.text = "coucou"
+        
+        return cell
+    }
+    
 }

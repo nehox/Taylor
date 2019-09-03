@@ -58,12 +58,12 @@ class FightArenaViewController: UIViewController {
         
         
         if monster.lifePoint <= 0 {
-            print("Zombi died")
+            print("Monster died")
         } else {
             player.lifePoint -= monster.damage
         }
         
-        print("Zombi life : \(monster.lifePoint)\nPlayer life : \(player.lifePoint)")
+        print("Monster life : \(monster.lifePoint)\nPlayer life : \(player.lifePoint)")
         
         
     }

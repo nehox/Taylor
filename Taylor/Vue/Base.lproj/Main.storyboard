@@ -65,6 +65,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oly-P5-B6z">
                                 <rect key="frame" x="0.0" y="64" width="414" height="744"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Egn-BS-tJw" id="Sm7-dF-F5F"/>
+                                    <outlet property="delegate" destination="Egn-BS-tJw" id="eHC-Ok-sFQ"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-Dm-TRX">
                                 <rect key="frame" x="16" y="16" width="49" height="30"/>
@@ -85,6 +89,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TeQ-PN-BtS"/>
                     </view>
+                    <connections>
+                        <outlet property="listCharacterTableView" destination="Oly-P5-B6z" id="J3Y-yA-m9D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5l-xG-BaV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,7 +236,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLx-pe-9Bf">
-                                <rect key="frame" x="186" y="114" width="42" height="20"/>
+                                <rect key="frame" x="160" y="114" width="94" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -286,7 +293,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="hVp-qU-apG" firstAttribute="leading" secondItem="eLx-pe-9Bf" secondAttribute="trailing" constant="34" id="0P9-ek-aS6"/>
+                            <constraint firstItem="hVp-qU-apG" firstAttribute="leading" secondItem="eLx-pe-9Bf" secondAttribute="trailing" constant="8" id="0P9-ek-aS6"/>
                             <constraint firstItem="rxr-q6-3qg" firstAttribute="trailing" secondItem="d1h-Hc-abd" secondAttribute="trailing" constant="32" id="3nv-vk-Kqs"/>
                             <constraint firstItem="hVp-qU-apG" firstAttribute="top" secondItem="rxr-q6-3qg" secondAttribute="top" constant="64" id="4RJ-0l-84y"/>
                             <constraint firstItem="dbQ-lw-KKq" firstAttribute="leading" secondItem="rxr-q6-3qg" secondAttribute="leading" constant="32" id="6U9-jV-hoZ"/>
