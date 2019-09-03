@@ -1,5 +1,5 @@
 //
-//  Thief.swift
+//  Archer.swift
 //  Taylor
 //
 //  Created by Julien Ficerai on 26/08/2019.
@@ -8,21 +8,22 @@
 
 import Foundation
 
-public class Thief: Human {
+
+public class Zombi: Human {
     
     var weapon: Weapon?
     
     init(name: String, surname: String, gender: Gender, weapon: Weapon? ) {
         super.init(name: name, surname: surname, gender: gender, lifePoint: 100, skillsPoints: [
-            .speed : 25,
+            .speed : 15,
             .intelligence: 10,
-            .agility: 15])
+            .agility: 25])
         self.weapon = weapon
     }
 }
 
-extension Thief: HumanProtocol {
-
+extension Zombi: HumanProtocol {
+    
     func eat() {
         if (self.lifePoint < 95) {
             self.lifePoint += 5

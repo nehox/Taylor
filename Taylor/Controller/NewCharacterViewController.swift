@@ -12,39 +12,25 @@ import SwiftGifOrigin
 
 class NewCharacterViewcontroller: UIViewController {
     
+    // MARK: -- Outlets --
+    
     @IBOutlet weak var genderSegmentedController: UISegmentedControl!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var classSegmentedController: UISegmentedControl!
     @IBOutlet weak var nameTexField: UITextField!
     @IBOutlet weak var surnameTextField: UITextField!
     
+    // MARK: -- UIViewController override --
     override func viewDidLoad() {
         super.viewDidLoad()
         
         genderSegmentedController.selectedSegmentIndex = 0
-        classSegmentedController.selectedSegmentIndex = 2
-        self.imageView.loadGif(asset: "Thief_Male")
-        
-    }
-    @IBAction func saveButton(_ sender: Any) {
-        
-        var perso: Human
-        
-        switch classSegmentedController.selectedSegmentIndex {
-        case 0:
-            perso = Archer(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
-        case 1:
-            perso = Magician(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
-        case 2:
-            perso = Thief(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
-        default:
-            perso = Human(name: "John", surname: "Doe", gender: .other, skillsPoints: [:])
-        }
-        
-        print("nouveau perso : \nnom : \(perso.name)\nprenom : \(perso.surname)\nclass : \(String(describing: perso))\ngender : \(perso.gender)")
+        classSegmentedController.selectedSegmentIndex = 0
+        self.imageView.loadGif(asset: "Zombi_Male")
         
     }
     
+    // MARK: -- private functions --
     
     /// get current selected gender
     private func getGender() -> Gender {
@@ -63,16 +49,15 @@ class NewCharacterViewcontroller: UIViewController {
     private func getCharacterClass() -> PlayerClass {
         switch classSegmentedController.selectedSegmentIndex {
         case 0:
-            return .archer
+            return .zombi
         case 1:
-            return .magician
+            return .adventurer
         case 2:
-            return .thief
+            return .ninja
         default:
-            return .archer
+            return .zombi
         }
     }
-    
     
     /// change class preview
     /// - Parameter gender: male / female / other
@@ -94,18 +79,38 @@ class NewCharacterViewcontroller: UIViewController {
         }
         
         switch playerClass {
-            case .archer:
-                self.imageView.loadGif(asset: "Archer_\(genderStr)")
+            case .zombi:
+                self.imageView.loadGif(asset: "Zombi_\(genderStr)")
                 break
-            case .magician:
-                self.imageView.loadGif(asset: "Magician_\(genderStr)")
+            case .adventurer:
+                self.imageView.loadGif(asset: "Adventurer_\(genderStr)")
                 break
-            case .thief:
-                self.imageView.loadGif(asset: "Thief_\(genderStr)")
+            case .ninja:
+                self.imageView.loadGif(asset: "Ninja_\(genderStr)")
                 break
         }
     }
     
+    // MARK: -- Outlets actions --
+    
+    @IBAction func saveButton(_ sender: Any) {
+        
+        var perso: Human
+        
+        switch classSegmentedController.selectedSegmentIndex {
+        case 0:
+            perso = Zombi(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+        case 1:
+            perso = Adventurer(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+        case 2:
+            perso = Ninja(name: nameTexField.text ?? "", surname: surnameTextField.text ?? "", gender: getGender(), weapon: nil)
+        default:
+            perso = Human(name: "John", surname: "Doe", gender: .other, skillsPoints: [:])
+        }
+        
+        print("nouveau perso : \nnom : \(perso.name)\nprenom : \(perso.surname)\nclass : \(String(describing: perso))\ngender : \(perso.gender)")
+        
+    }
     
     @IBAction func genderSelectControllerChanged(_ sender: Any) {
         self.changeImageViewCharacter(gender: getGender(), playerClass: getCharacterClass())

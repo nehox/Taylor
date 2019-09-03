@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Magician: Human {
+public class Adventurer: Human {
     
    var weapon: Weapon?
     
@@ -21,7 +21,7 @@ public class Magician: Human {
     }
 }
 
-extension Magician: HumanProtocol {
+extension Adventurer: HumanProtocol {
 
     func eat() {
         if (self.lifePoint < 95) {

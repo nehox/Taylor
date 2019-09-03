@@ -15,10 +15,10 @@ class FightArenaViewController: UIViewController {
         super.viewDidLoad()
         
         //create player as Human
-        let player = Archer(name: "John", surname: "Doe", gender: .male, weapon: Weapon(type: .melee, damage: 20))
+        let player = Zombi(name: "John", surname: "Doe", gender: .male, weapon: Weapon(type: .melee, damage: 20))
         
         //create monster as Zombi
-        let monster = Zombi()
+        let monster = Monster()
         
         
         //do fight
@@ -40,17 +40,17 @@ class FightArenaViewController: UIViewController {
     /// do a round
     /// - Parameter player: Human
     /// - Parameter monster: Zombi
-    func round(player: Human, monster: Zombi) {
+    func round(player: Human, monster: Monster) {
      
         switch player  {
-            case is Archer:
-                monster.lifePoint -= (player as! Archer).weapon?.damage ?? 10
+            case is Zombi:
+                monster.lifePoint -= (player as! Zombi).weapon?.damage ?? 10
                 break
-            case is Magician:
-                monster.lifePoint -= (player as! Magician).weapon?.damage ?? 10
+            case is Adventurer:
+                monster.lifePoint -= (player as! Adventurer).weapon?.damage ?? 10
                 break
-            case is Thief:
-                monster.lifePoint -= (player as! Thief).weapon?.damage ?? 10
+            case is Ninja:
+                monster.lifePoint -= (player as! Ninja).weapon?.damage ?? 10
                 break
             default:
                 print("not possible ! ")

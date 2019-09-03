@@ -23,9 +23,9 @@ enum Gender {
 }
 
 enum PlayerClass {
-    case archer 
-    case thief
-    case magician
+    case zombi 
+    case ninja
+    case adventurer
 }
 
 protocol HumanProtocol {

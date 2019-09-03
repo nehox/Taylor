@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DC2C8B6941E470F5E2CF49E /* Pods_Taylor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB7798015F6209DFF4D99F5 /* Pods_Taylor.framework */; };
 		7EF3E9B73BB0A2FEFE623BB8 /* Pods_TaylorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A3E09050C68ACB55027401 /* Pods_TaylorUITests.framework */; };
-		BE34B4C2231D493F005AEB5B /* Zombi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34B4C1231D493F005AEB5B /* Zombi.swift */; };
+		BE34B4C2231D493F005AEB5B /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34B4C1231D493F005AEB5B /* Monster.swift */; };
 		BE34B4C4231D5171005AEB5B /* FightArenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */; };
 		E2A69A008A4196C4C424DFAE /* Pods_TaylorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F622F93F9DFF35A6F4F82F /* Pods_TaylorTests.framework */; };
 		F92F52B72314081C001E39B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52B62314081C001E39B8 /* AppDelegate.swift */; };
@@ -21,10 +21,10 @@
 		F92F52CE2314081D001E39B8 /* TaylorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52CD2314081D001E39B8 /* TaylorTests.swift */; };
 		F92F52D92314081D001E39B8 /* TaylorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52D82314081D001E39B8 /* TaylorUITests.swift */; };
 		F92F52EB231411B5001E39B8 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52EA231411B5001E39B8 /* Human.swift */; };
-		F9ECABDC2314601100A2EFB2 /* Archer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDB2314601100A2EFB2 /* Archer.swift */; };
+		F9ECABDC2314601100A2EFB2 /* Zombi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDB2314601100A2EFB2 /* Zombi.swift */; };
 		F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDE2314627200A2EFB2 /* Weapon.swift */; };
-		F9ECABE1231468D700A2EFB2 /* Thief.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE0231468D700A2EFB2 /* Thief.swift */; };
-		F9ECABE3231468E700A2EFB2 /* Magician.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE2231468E700A2EFB2 /* Magician.swift */; };
+		F9ECABE1231468D700A2EFB2 /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE0231468D700A2EFB2 /* Ninja.swift */; };
+		F9ECABE3231468E700A2EFB2 /* Adventurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE2231468E700A2EFB2 /* Adventurer.swift */; };
 		F9ECABE52319AAAB00A2EFB2 /* NewCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE42319AAAB00A2EFB2 /* NewCharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		88D5EC181C898736C7043299 /* Pods-Taylor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taylor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Taylor/Pods-Taylor.release.xcconfig"; sourceTree = "<group>"; };
 		89F622F93F9DFF35A6F4F82F /* Pods_TaylorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaylorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CFE5000A53D3F647021D35 /* Pods-Taylor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Taylor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Taylor/Pods-Taylor.debug.xcconfig"; sourceTree = "<group>"; };
-		BE34B4C1231D493F005AEB5B /* Zombi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombi.swift; sourceTree = SOURCE_ROOT; };
+		BE34B4C1231D493F005AEB5B /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = SOURCE_ROOT; };
 		BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightArenaViewController.swift; sourceTree = "<group>"; };
 		F92F52B32314081C001E39B8 /* Taylor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taylor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92F52B62314081C001E39B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,10 +72,10 @@
 		F92F52D82314081D001E39B8 /* TaylorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaylorUITests.swift; sourceTree = "<group>"; };
 		F92F52DA2314081D001E39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92F52EA231411B5001E39B8 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Human.swift; path = Taylor/Models/Player/Human.swift; sourceTree = SOURCE_ROOT; };
-		F9ECABDB2314601100A2EFB2 /* Archer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archer.swift; sourceTree = "<group>"; };
+		F9ECABDB2314601100A2EFB2 /* Zombi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombi.swift; sourceTree = "<group>"; };
 		F9ECABDE2314627200A2EFB2 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		F9ECABE0231468D700A2EFB2 /* Thief.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thief.swift; sourceTree = "<group>"; };
-		F9ECABE2231468E700A2EFB2 /* Magician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magician.swift; sourceTree = "<group>"; };
+		F9ECABE0231468D700A2EFB2 /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
+		F9ECABE2231468E700A2EFB2 /* Adventurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adventurer.swift; sourceTree = "<group>"; };
 		F9ECABE42319AAAB00A2EFB2 /* NewCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,9 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				F92F52EA231411B5001E39B8 /* Human.swift */,
-				F9ECABDB2314601100A2EFB2 /* Archer.swift */,
-				F9ECABE0231468D700A2EFB2 /* Thief.swift */,
-				F9ECABE2231468E700A2EFB2 /* Magician.swift */,
+				F9ECABDB2314601100A2EFB2 /* Zombi.swift */,
+				F9ECABE0231468D700A2EFB2 /* Ninja.swift */,
+				F9ECABE2231468E700A2EFB2 /* Adventurer.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 		F92F52ED23142555001E39B8 /* Monster */ = {
 			isa = PBXGroup;
 			children = (
-				BE34B4C1231D493F005AEB5B /* Zombi.swift */,
+				BE34B4C1231D493F005AEB5B /* Monster.swift */,
 			);
 			path = Monster;
 			sourceTree = "<group>";
@@ -533,14 +533,14 @@
 				F92F52BB2314081C001E39B8 /* ViewController.swift in Sources */,
 				F92F52B72314081C001E39B8 /* AppDelegate.swift in Sources */,
 				BE34B4C4231D5171005AEB5B /* FightArenaViewController.swift in Sources */,
-				F9ECABE3231468E700A2EFB2 /* Magician.swift in Sources */,
+				F9ECABE3231468E700A2EFB2 /* Adventurer.swift in Sources */,
 				F9ECABE52319AAAB00A2EFB2 /* NewCharacterViewController.swift in Sources */,
 				F92F52B92314081C001E39B8 /* SceneDelegate.swift in Sources */,
 				F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */,
-				F9ECABE1231468D700A2EFB2 /* Thief.swift in Sources */,
+				F9ECABE1231468D700A2EFB2 /* Ninja.swift in Sources */,
 				F92F52EB231411B5001E39B8 /* Human.swift in Sources */,
-				F9ECABDC2314601100A2EFB2 /* Archer.swift in Sources */,
-				BE34B4C2231D493F005AEB5B /* Zombi.swift in Sources */,
+				F9ECABDC2314601100A2EFB2 /* Zombi.swift in Sources */,
+				BE34B4C2231D493F005AEB5B /* Monster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

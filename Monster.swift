@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Zombi {
+class Monster {
     
     var lifePoint: Int
     let damage: Int

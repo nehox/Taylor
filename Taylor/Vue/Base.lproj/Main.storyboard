@@ -87,9 +87,9 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Sqg-S9-tyA">
                                 <rect key="frame" x="32" y="367" width="350" height="32"/>
                                 <segments>
-                                    <segment title="Archer"/>
-                                    <segment title="Mage"/>
-                                    <segment title="Voleur"/>
+                                    <segment title="Zombi"/>
+                                    <segment title="Aventurier"/>
+                                    <segment title="Ninja"/>
                                 </segments>
                                 <connections>
                                     <action selector="classSegmentedControllerChanged:" destination="czD-kZ-3Ma" eventType="valueChanged" id="ECL-gG-18Z"/>
