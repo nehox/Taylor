@@ -87,9 +87,11 @@ class NewCharacterViewcontroller: UIViewController {
     @IBAction func genderSelectControllerChanged(_ sender: Any) {
         self.changeImageViewCharacter()
     }
+    
     @IBAction func classSegmentedControllerChanged(_ sender: Any) {
         self.changeImageViewCharacter()
     }
+    
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true)
     }

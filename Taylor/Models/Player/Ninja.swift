@@ -13,7 +13,7 @@ public class Ninja: Human {
     var weapon: Weapon?
     
     init(name: String, surname: String, gender: Gender, weapon: Weapon? ) {
-        super.init(name: name, surname: surname, gender: gender, lifePoint: 100)
+        super.init(name: name, surname: surname, gender: gender, lifePoint: 100, profession: PlayerClass.ninja)
         self.weapon = weapon
     }
 }

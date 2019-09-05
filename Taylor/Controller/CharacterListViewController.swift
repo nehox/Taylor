@@ -18,7 +18,7 @@ class CharacterListViewController: UIViewController {
     
     override func viewDidLoad() {
         initData()
-        
+        listCharacterTableView.register(UINib(nibName: "CharacterCell",bundle: nil), forCellReuseIdentifier: "CharacterCell")
     }
     
     
@@ -57,7 +57,8 @@ class CharacterListViewController: UIViewController {
                 default:
                     listCharacters.append(Human(name: player.name ?? "",
                                                 surname: player.surname ?? "",
-                                                gender: getGender(gender: player.gender ?? ""))
+                                                gender: getGender(gender: player.gender ?? ""),
+                                                profession: PlayerClass.zombi)
                                        )
                     
                 }
@@ -87,9 +88,16 @@ extension CharacterListViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath) as! CharacterCell
         
-        cell.textLabel?.text = listCharacters[indexPath.row].name
+        if (listCharacters.count == 0 ){
+            self.initData()
+        }
+        
+        cell.characterePreviewImageView.loadGif(asset: "\(listCharacters[indexPath.row].getProfessionString())_\(listCharacters[indexPath.row].getGenderString())")
+        cell.surnameLabel.text = listCharacters[indexPath.row].surname
+        cell.nameLabel.text = listCharacters[indexPath.row].name
+        cell.classLabel.text = listCharacters[indexPath.row].getProfessionString()
         
         return cell
     }

@@ -17,15 +17,15 @@ enum Skills {
 }
 
 enum Gender: String {
-    case male
-    case female
-    case other
+    case male = "Male"
+    case female = "Female"
+    case other = "Other"
 }
 
-enum PlayerClass {
-    case zombi 
-    case ninja
-    case adventurer
+enum PlayerClass: String {
+    case zombi = "Zombi"
+    case ninja = "Ninja"
+    case adventurer = "Adventurer"
 }
 
 protocol HumanProtocol {
@@ -39,6 +39,7 @@ public class Human {
     let name: String
     let surname: String
     let gender: Gender
+    let profession: PlayerClass
     //let skillsPoints: [Skills: Int]
     
     var lifePoint: Int
@@ -48,10 +49,23 @@ public class Human {
     /// - Parameter surname: human's surname
     /// - Parameter lifePoint: human's lifePoint - default 20pts
     /// - Parameter skills: list of human skillsPoint
-    init(name:String, surname: String,gender: Gender , lifePoint: Int = 20) {
-        self.name      = name
-        self.surname   = surname
-        self.gender    = gender
-        self.lifePoint = lifePoint
+    init(name:String, surname: String,gender: Gender , lifePoint: Int = 20, profession: PlayerClass) {
+        self.name       = name
+        self.surname    = surname
+        self.gender     = gender
+        self.lifePoint  = lifePoint
+        self.profession = profession
+    }
+    
+    
+    /// get human profession in string
+    public func getProfessionString() -> String {
+        return self.profession.rawValue
+    }
+    
+    
+    /// get human gender in string
+    public func getGenderString() -> String {
+        return self.gender.rawValue
     }
 }
