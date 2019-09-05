@@ -12,6 +12,7 @@
 		BE34B4C2231D493F005AEB5B /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34B4C1231D493F005AEB5B /* Monster.swift */; };
 		BE34B4C4231D5171005AEB5B /* FightArenaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */; };
 		BE49B342231E97CE009E2E01 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE49B341231E97CE009E2E01 /* CharacterListViewController.swift */; };
+		BE4AE4DF2321599B00F163E3 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4AE4DE2321599B00F163E3 /* Random.swift */; };
 		BE86A54E232130AA00348321 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE86A54D232130AA00348321 /* CharacterCell.xib */; };
 		BE86A5502321322400348321 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE86A54F2321322400348321 /* CharacterCell.swift */; };
 		E2A69A008A4196C4C424DFAE /* Pods_TaylorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F622F93F9DFF35A6F4F82F /* Pods_TaylorTests.framework */; };
@@ -63,6 +64,7 @@
 		BE34B4C1231D493F005AEB5B /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = SOURCE_ROOT; };
 		BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightArenaViewController.swift; sourceTree = "<group>"; };
 		BE49B341231E97CE009E2E01 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		BE4AE4DE2321599B00F163E3 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		BE86A54D232130AA00348321 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		BE86A54F2321322400348321 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		F91ABE18231EEBF900B341A7 /* PersistentData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistentData.xcdatamodel; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE4AE4DD2321598400F163E3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE4AE4DE2321599B00F163E3 /* Random.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		D1F43CED7AF7FC5D4F8086B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +184,7 @@
 		F92F52B52314081C001E39B8 /* Taylor */ = {
 			isa = PBXGroup;
 			children = (
+				BE4AE4DD2321598400F163E3 /* utils */,
 				F91ABE16231EEBCF00B341A7 /* Persistent */,
 				F92F52E623140F25001E39B8 /* Models */,
 				F92F52E723140F40001E39B8 /* Vue */,
@@ -562,6 +573,7 @@
 				F9ECABE52319AAAB00A2EFB2 /* NewCharacterViewController.swift in Sources */,
 				F92F52B92314081C001E39B8 /* SceneDelegate.swift in Sources */,
 				F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */,
+				BE4AE4DF2321599B00F163E3 /* Random.swift in Sources */,
 				F91ABE1B231EEE5B00B341A7 /* CoreDataUtils.swift in Sources */,
 				F9ECABE1231468D700A2EFB2 /* Ninja.swift in Sources */,
 				F91ABE19231EEBF900B341A7 /* PersistentData.xcdatamodeld in Sources */,

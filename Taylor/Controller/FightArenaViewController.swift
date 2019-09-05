@@ -11,29 +11,14 @@ import UIKit
 
 class FightArenaViewController: UIViewController {
     
+    var player: Human = Human.getAllHumans()[Int.random(in: 0...Human.getAllHumans().count)]
+    var monster: Monster?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //create player as Human
-        let player = Zombi(name: "John", surname: "Doe", gender: .male, weapon: Weapon(type: .melee, damage: 20))
+        print("player is : \(player.name) \(player.surname) \(player.getProfessionString())")
         
-        //create monster as Zombi
-        let monster = Monster()
-        
-        
-        //do fight
-        round(player: player, monster: monster)
-        round(player: player, monster: monster)
-        round(player: player, monster: monster)
-        
-        //regen human
-        player.eat()
-        player.eat()
-        player.eat()
-        
-        //finish fight
-        round(player: player, monster: monster)
-        round(player: player, monster: monster)
     }
     
     
