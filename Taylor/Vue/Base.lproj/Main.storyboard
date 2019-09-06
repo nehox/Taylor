@@ -37,6 +37,13 @@
                                     <segue destination="Egn-BS-tJw" kind="show" id="Q1J-ej-ufY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u7-dp-1uV">
+                                <rect key="frame" x="177" y="565" width="60" height="30"/>
+                                <state key="normal" title="Scenario"/>
+                                <connections>
+                                    <segue destination="n6x-fc-rgF" kind="show" id="pPh-1F-gON"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -44,8 +51,10 @@
                             <constraint firstItem="Qls-6O-jbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ha0-fx-2bj"/>
                             <constraint firstItem="Zi1-Wi-kb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PrK-tc-H0U"/>
                             <constraint firstItem="Qls-6O-jbn" firstAttribute="top" secondItem="5y3-wM-8yQ" secondAttribute="bottom" constant="40" id="br2-hn-02s"/>
+                            <constraint firstItem="1u7-dp-1uV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcO-eU-5Zi"/>
                             <constraint firstItem="Qls-6O-jbn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hif-2X-EGh"/>
                             <constraint firstItem="Zi1-Wi-kb8" firstAttribute="top" secondItem="Qls-6O-jbn" secondAttribute="bottom" constant="40" id="qy1-9g-Cmv"/>
+                            <constraint firstItem="1u7-dp-1uV" firstAttribute="top" secondItem="Zi1-Wi-kb8" secondAttribute="bottom" constant="32" id="vFY-dD-g21"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -222,6 +231,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Gv-Ge-bX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1074" y="-632"/>
+        </scene>
+        <!--Scenario View Controller-->
+        <scene sceneID="4Le-Sr-xQz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tqi-DG-Soi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="n6x-fc-rgF" customClass="ScenarioViewController" customModule="Taylor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqI-4b-C3E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6r-tU-yel">
+                                <rect key="frame" x="32" y="62" width="350" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="L6N-Uc-NX0"/>
+                                </constraints>
+                                <state key="normal" title="Fight !!">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="FightButton:" destination="n6x-fc-rgF" eventType="touchUpInside" id="Nc6-NE-p76"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round numéro :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tY-Cb-iH7">
+                                <rect key="frame" x="32" y="124" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0B8-bp-Z2r">
+                                <rect key="frame" x="169" y="124" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player hp :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgy-6K-gIz">
+                                <rect key="frame" x="32" y="209" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhD-Vi-JoS">
+                                <rect key="frame" x="121" y="209" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa3-Sb-1uC">
+                                <rect key="frame" x="300" y="209" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monster hp :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-wx-s2b">
+                                <rect key="frame" x="195" y="209" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f2y-wx-s2b" firstAttribute="leading" secondItem="LhD-Vi-JoS" secondAttribute="trailing" constant="32" id="7wN-yM-Ooo"/>
+                            <constraint firstItem="a6r-tU-yel" firstAttribute="centerX" secondItem="fqI-4b-C3E" secondAttribute="centerX" id="FUW-SB-n7X"/>
+                            <constraint firstItem="3tY-Cb-iH7" firstAttribute="leading" secondItem="sw2-18-Ra4" secondAttribute="leading" constant="32" id="ICt-GB-erO"/>
+                            <constraint firstItem="Sgy-6K-gIz" firstAttribute="top" secondItem="3tY-Cb-iH7" secondAttribute="bottom" constant="64" id="L1p-cL-vMw"/>
+                            <constraint firstItem="f2y-wx-s2b" firstAttribute="centerY" secondItem="LhD-Vi-JoS" secondAttribute="centerY" id="SsT-oV-thB"/>
+                            <constraint firstItem="0B8-bp-Z2r" firstAttribute="leading" secondItem="3tY-Cb-iH7" secondAttribute="trailing" constant="16" id="WBf-it-aVD"/>
+                            <constraint firstItem="sw2-18-Ra4" firstAttribute="trailing" secondItem="a6r-tU-yel" secondAttribute="trailing" constant="32" id="Wa4-zq-Mwt"/>
+                            <constraint firstItem="a6r-tU-yel" firstAttribute="leading" secondItem="sw2-18-Ra4" secondAttribute="leading" constant="32" id="acQ-et-B1K"/>
+                            <constraint firstItem="a6r-tU-yel" firstAttribute="top" secondItem="sw2-18-Ra4" secondAttribute="top" constant="62" id="ehs-dt-ecI"/>
+                            <constraint firstItem="3tY-Cb-iH7" firstAttribute="top" secondItem="a6r-tU-yel" secondAttribute="bottom" constant="32" id="fCx-0X-CEH"/>
+                            <constraint firstItem="Sgy-6K-gIz" firstAttribute="leading" secondItem="sw2-18-Ra4" secondAttribute="leading" constant="32" id="fw6-l9-vz1"/>
+                            <constraint firstItem="LhD-Vi-JoS" firstAttribute="leading" secondItem="Sgy-6K-gIz" secondAttribute="trailing" constant="8" id="i55-YF-DeQ"/>
+                            <constraint firstItem="Wa3-Sb-1uC" firstAttribute="centerY" secondItem="f2y-wx-s2b" secondAttribute="centerY" id="jXg-E1-qAr"/>
+                            <constraint firstItem="Wa3-Sb-1uC" firstAttribute="leading" secondItem="f2y-wx-s2b" secondAttribute="trailing" constant="8" id="pBe-g3-lif"/>
+                            <constraint firstItem="LhD-Vi-JoS" firstAttribute="top" secondItem="3tY-Cb-iH7" secondAttribute="bottom" constant="64" id="sXk-iw-goD"/>
+                            <constraint firstItem="0B8-bp-Z2r" firstAttribute="top" secondItem="a6r-tU-yel" secondAttribute="bottom" constant="32" id="wFw-mN-jRi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sw2-18-Ra4"/>
+                    </view>
+                    <connections>
+                        <outlet property="fightButton" destination="a6r-tU-yel" id="okm-nb-HPa"/>
+                        <outlet property="monsterHpLabel" destination="Wa3-Sb-1uC" id="hjW-ew-hSp"/>
+                        <outlet property="playerHpLabel" destination="LhD-Vi-JoS" id="lPJ-ua-glv"/>
+                        <outlet property="roundString" destination="0B8-bp-Z2r" id="Oze-kM-4tM"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-91.304347826086968" y="908.70535714285711"/>
         </scene>
         <!--Fight Arena View Controller-->
         <scene sceneID="6cu-19-bJd">

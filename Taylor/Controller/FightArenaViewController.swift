@@ -50,7 +50,6 @@ class FightArenaViewController: UIViewController {
         
         print("Monster life : \(monster.lifePoint)\nPlayer life : \(player.lifePoint)")
         
-        
     }
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true)

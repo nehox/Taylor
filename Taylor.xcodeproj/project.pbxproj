@@ -27,6 +27,7 @@
 		F92F52CE2314081D001E39B8 /* TaylorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52CD2314081D001E39B8 /* TaylorTests.swift */; };
 		F92F52D92314081D001E39B8 /* TaylorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52D82314081D001E39B8 /* TaylorUITests.swift */; };
 		F92F52EB231411B5001E39B8 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F52EA231411B5001E39B8 /* Human.swift */; };
+		F9E60B222322B40600E78E17 /* ScenarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E60B212322B40600E78E17 /* ScenarioViewController.swift */; };
 		F9ECABDC2314601100A2EFB2 /* Zombi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDB2314601100A2EFB2 /* Zombi.swift */; };
 		F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABDE2314627200A2EFB2 /* Weapon.swift */; };
 		F9ECABE1231468D700A2EFB2 /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ECABE0231468D700A2EFB2 /* Ninja.swift */; };
@@ -84,6 +85,7 @@
 		F92F52D82314081D001E39B8 /* TaylorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaylorUITests.swift; sourceTree = "<group>"; };
 		F92F52DA2314081D001E39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92F52EA231411B5001E39B8 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Human.swift; path = Taylor/Models/Player/Human.swift; sourceTree = SOURCE_ROOT; };
+		F9E60B212322B40600E78E17 /* ScenarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioViewController.swift; sourceTree = "<group>"; };
 		F9ECABDB2314601100A2EFB2 /* Zombi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombi.swift; sourceTree = "<group>"; };
 		F9ECABDE2314627200A2EFB2 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		F9ECABE0231468D700A2EFB2 /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				F92F52B82314081C001E39B8 /* SceneDelegate.swift */,
 				BE34B4C3231D5171005AEB5B /* FightArenaViewController.swift */,
 				BE49B341231E97CE009E2E01 /* CharacterListViewController.swift */,
+				F9E60B212322B40600E78E17 /* ScenarioViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				F92F52B92314081C001E39B8 /* SceneDelegate.swift in Sources */,
 				F9ECABDF2314627200A2EFB2 /* Weapon.swift in Sources */,
 				BE4AE4DF2321599B00F163E3 /* Random.swift in Sources */,
+				F9E60B222322B40600E78E17 /* ScenarioViewController.swift in Sources */,
 				F91ABE1B231EEE5B00B341A7 /* CoreDataUtils.swift in Sources */,
 				F9ECABE1231468D700A2EFB2 /* Ninja.swift in Sources */,
 				F91ABE19231EEBF900B341A7 /* PersistentData.xcdatamodeld in Sources */,
