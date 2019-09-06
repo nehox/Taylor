@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CharacterCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterCell" id="Drx-h4-6Tm" customClass="CharacterCell" customModule="Taylor" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CharacterCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterCell" rowHeight="44" id="Drx-h4-6Tm" customClass="CharacterCell" customModule="Taylor" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Drx-h4-6Tm" id="PPZ-pN-9Ko">
@@ -47,8 +47,8 @@
                     <constraint firstItem="Mso-pk-BXY" firstAttribute="centerY" secondItem="PPZ-pN-9Ko" secondAttribute="centerY" id="6kP-pR-n2n"/>
                     <constraint firstItem="3SF-s0-mEX" firstAttribute="top" secondItem="PPZ-pN-9Ko" secondAttribute="top" constant="8" id="7UD-O6-qMT"/>
                     <constraint firstAttribute="trailing" secondItem="uCf-VE-nLi" secondAttribute="trailing" constant="8" id="Ebr-EO-cAU"/>
-                    <constraint firstAttribute="bottom" secondItem="3SF-s0-mEX" secondAttribute="bottom" constant="8" id="IgB-2S-BrN"/>
                     <constraint firstItem="uCf-VE-nLi" firstAttribute="centerY" secondItem="PPZ-pN-9Ko" secondAttribute="centerY" id="Qj3-3x-oDm"/>
+                    <constraint firstAttribute="bottom" secondItem="3SF-s0-mEX" secondAttribute="bottom" constant="8" id="TUi-uJ-uIR"/>
                     <constraint firstItem="uCf-VE-nLi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YX6-5D-ehM" secondAttribute="trailing" constant="16" id="WSq-Ea-F1b"/>
                     <constraint firstItem="YX6-5D-ehM" firstAttribute="centerY" secondItem="PPZ-pN-9Ko" secondAttribute="centerY" id="gnv-Wb-HwC"/>
                     <constraint firstItem="Mso-pk-BXY" firstAttribute="leading" secondItem="3SF-s0-mEX" secondAttribute="trailing" constant="16" id="kIa-01-Eqx"/>
