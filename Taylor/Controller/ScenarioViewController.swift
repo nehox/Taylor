@@ -24,11 +24,27 @@ class ScenarioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playerHpLabel.text = self.player.lifePoint.description
-        monsterHpLabel.text = self.monster.lifePoint.description
+        
+        _ = MonsterManager.getRandomMonster().done { (monster) in
+            self.monster = monster
+            self.monsterHpLabel.text = self.monster.lifePoint.description
+        }
+        
+
     }
     
     @IBAction func FightButton(_ sender: Any) {
-        round(player: player, monster: monster)
+        if(playerIsDied()) {
+            _ = MonsterManager.getRandomMonster().done { (monster) in
+                self.monster = monster
+                self.monsterHpLabel.text = self.monster.lifePoint.description
+                self.player.lifePoint = 100
+                self.playerHpLabel.text = self.player.lifePoint.description
+            }
+        } else {
+            round(player: player, monster: monster)
+        }
+        
     }
     
     

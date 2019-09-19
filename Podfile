@@ -8,9 +8,8 @@ target 'Taylor' do
   # Pods for Taylor
 
   pod 'SwiftGifOrigin', '~> 1.7.0'
-  pod 'AnimationSugar'
   pod "PromiseKit"
-  pod 'Alamofire'
+  pod 'Alamofire', '4.8'
 
   target 'TaylorTests' do
     inherit! :search_paths
